@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (India)</title>
+    <script src="coupon.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul class="navlinks" id="blur">
+                <li class="toggleswitch">
+                    
+                    <input type="checkbox" id="mode">
+                    <label for="mode"></label>
+
+                </li>
+
+                <li class="applelogo"> <a title="mainpage" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="25px" data-name="Layer 1" viewBox="0 0 24 24" id="apple">
+                            <path fill="#d3d3d3"
+                                d="M14.94,5.19A4.38,4.38,0,0,0,16,2,4.44,4.44,0,0,0,13,3.52,4.17,4.17,0,0,0,12,6.61,3.69,3.69,0,0,0,14.94,5.19Zm2.52,7.44a4.51,4.51,0,0,1,2.16-3.81,4.66,4.66,0,0,0-3.66-2c-1.56-.16-3,.91-3.83.91s-2-.89-3.3-.87A4.92,4.92,0,0,0,4.69,9.39C2.93,12.45,4.24,17,6,19.47,6.8,20.68,7.8,22.05,9.12,22s1.75-.82,3.28-.82,2,.82,3.3.79,2.22-1.24,3.06-2.45a11,11,0,0,0,1.38-2.85A4.41,4.41,0,0,1,17.46,12.63Z">
+                            </path>
+                        </svg></a></li>
+                <i class="ri-apple-fill"></i>
+                <li> <a title="macpage" class='navlink' href="/index.html">Mac</a></li>
+                <li> <a title="storepage" id="store" class='navlink' href="/index.html">Store</a></li>
+                <li> <a title="ipadpage" class='navlink' href="/index.html">iPad</a></li>
+                <li> <a title="iphonepage" class='navlink' href="/index.html">iPhone</a></li>
+                <li> <a title="watchpage" class='navlink' href="/index.html">Watch</a></li>
+                <li> <a title="airpodspage" class='navlink' href="/index.html">AirPods</a></li>
+                <li> <a title="tvhomepage" class='navlink' href="index.html">TV & Home</a></li>
+                <li> <a title="entertainpage" class='navlink' href="/index.html">Entertainment</a></li>
+                <li> <a title="accesoriespage" class='navlink' href="/index.html">Accessories</a></li>
+                <li> <a title="helppage" class='navlink' href="/index.html">Support</a></li>
+                <i class="ri-search-line"></i>
+                <i class="ri-shopping-bag-line"></i>
+                <i class="ri-menu-3-line"></i>
+
+
+                <div class="responsivediv">
+                    <li> <a title="search" class='navicon' href="/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="20px" viewBox="0 0 24 24" id="search">
+                                <path fill="#d3d3d3"
+                                    d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038Z">
+                                </path>
+                            </svg></a></li>
+                    <li><a title="shopping" class='navicon' href="/"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100" width="20" height="20" id="bag">
+                                <switch>
+                                    <g>
+                                        <path fill="#d3d3d3"
+                                            d="M68 24v-4C68 8.954 59.046 0 48 0S28 8.954 28 20v4H12v60c0 6.63 5.37 12 12 12h48c6.63 0 12-5.37 12-12V24H68zm-32-4c0-6.627 5.373-12 12-12s12 5.373 12 12v4H36v-4zm40 64c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V32h56v52z">
+                                        </path>
+                                    </g>
+                                </switch>
+                            </svg></a></li>
+                    <li class="respnavbar navicon"><svg fill="#d3d3d3" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" height="20px" id="menu">
+                            <g data-name="Layer 2">
+                                <g data-name="menu">
+                                    <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"></rect>
+                                    <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"></rect>
+                                    <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"></rect>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="gap">
+    </div>
+
+
+    <!--Geolocation-->
+
+        <div id="location">
+            <img style="width: 28px; margin-right: 5px;" src="/placeholder.png" alt="geolocationbutton" >
+            <button onClick="geolocation()" id="geolocationbutton">Get Location</button>
+            <p id="out"></p>
+             <p id="weather"></p>
+        </div>
+        
+        <div class="gifts" id="blur">
+            <div id="coupon">
+                <button onClick="closeCoupon()" id="closebtn">&times;</button>
+            </div>
+            <span class="giftstitle">Gifts to spark joy.</span>
+            <span class="giftstext">Enjoy up to ₹1000 instant savings on </span>
+            <span class="giftstext1">eligible products with HDFC Bank Credit Cards.*</span>
+            <a href="" class="shopnow">Shop now ></a></span>
+        </div>
+
+
+        <!--Mainpage 1-->
+        <div class="mainpage1" id="blur">
+            <div class="mp1-text">
+                <span class="mp1-title1">iPhone 15 Pro</span>
+                <span class="mp1-title2">Titanium.So strong.So light.So Pro.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+        </div>
+
+        <!--Mainpage 2-->
+        <div class="mainpage2">
+            <div class="mp-default-text">
+                <span class="mp2-title1">iPhone 15</span>
+                <span class="mp2-desc">New camera.New design.Newphoria.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Mainpage 3-->
+
+    <div class="mainpage3">
+        <div class="mp-default-text">
+            <span class="applewatchlogo"><img src="/image3-1.png" alt="apple watch series"></span>
+            <span class="mp3desc">Smarter. Brighter. Mightier.</span>
+            <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+        </div>
+    </div>
+    </div>
+
+    <!--Mainpage 4-->
+
+    <div class="mainpage4">
+        <div class="promo1 grid-item">
+            <div class="mp-default-text">
+                <span class="appletradein"><img src="/4-1-1.png" alt="watch ultra-2"></span>
+                <span>Next-level Adventure.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+            <!--Watch SE-->
+        </div>
+        <div class="promo2 grid-item">
+            <div class="mp-default-text">
+                <span class="wwdc23">
+                    <img src="4-2-1.png" alt="wwdc23"></span>
+                <span class="wwdc23text">A first Apple Watch.</span>
+                <span class="wwdc23text"> And Apple</span>
+                <div class="mainpagelink"><a href="">Learn more > </a><a href=""> Watch the film ></a></div>
+            </div>
+        </div>
+
+
+        <div class="promo3 grid-item">
+            <div class="mp-default-text">
+                <img src="/promo_logo_apple_watch_se__b85vr9ri02gi_medium.png" alt="wwdc23"></span>
+                <span>A great deal to love.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+
+        </div>
+        <div class="promo4 grid-item">
+            <div class="mp-default-text">
+                <span id="mactitle">Save on Mac or iPad</span>
+                <span id="mactitle2">for university</span>
+                <span id="macdescription">And last chance to get AirPods with Mac</span>
+                <span id="macdescription2">and Apple Pencil with iPad.</span>
+                <span id="offerend">Offer ends 2 October</span>
+                <div class="mainpagelink"><a href="">shop now ></a></div>
+            </div>
+
+        </div>
+
+        <div class="promo5 grid-item">
+            <div class="mp-default-text">
+                <span class="macbook"><img src="/promo_logo_apple_watch_se__b85vr9ri02gi_medium.png"
+                        alt="wwdc23"></span>
+                <span id="mactitle3">MacBook Air 15"</span>
+                <span>Impressively big. Impossibly thin.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+
+        </div>
+        <div class="promo6 grid-item">
+            <div class="mp-default-text">
+                <span class="applewatchcontainer"><img
+                        src="https://www.apple.com/v/home/az/images/logos/apple-watch-ultra/promo_logo_apple_watch_ultra__ebzaahharnue_large.png"
+                        alt="apple watch ultra"></span>
+                <span>Adventure awaits.</span>
+                <div class="mainpagelink"><a href="">Learn More ></a> <a href="">Buy ></a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer1">
+        <div class="footer-text">
+            <p class="footer-para">*Instant savings, otherwise referred to as instant cashback, is available on the
+                Apple Store Online and Apple
+                Retail Stores with the purchase of an eligible product with qualifying HDFC Bank Credit Cards and
+                EasyEMI
+                Credit Cards only from 15 October 2023 to 14 November 2023, with the exception of iPhone 14 and iPhone
+                14
+                Plus, and AirPods Pro (2nd generation), which will have instant savings applicable between 15 October
+                2023
+                and 7 November 2023 only. Minimum transaction value of ₹10001.00 applies. Click here to see instant
+                savings
+                amounts and eligible devices. Instant savings are available for up to two orders per rolling 90-day
+                period
+                with an eligible card. Card eligibility is subject to terms and conditions between you and your
+                card-issuing
+                bank. Total transaction value is calculated after any trade-in credit or eligible discount is applied.
+                Any
+                subsequent order adjustment(s) or cancellation(s) may result in instant savings being recalculated, and
+                any
+                refund may be adjusted to account for instant savings clawback; this may result in no refund being made
+                to
+                you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply.
+                Offer
+                cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple
+                separate orders cannot be combined for instant savings
+            </p>
+            <p class="footer-para">
+                No Cost EMI is available with the purchase of an eligible product made using eligible cards on 3- or
+                6-month
+                tenures from most leading banks. Monthly pricing is rounded to the nearest rupee. Exact pricing will be
+                provided by your bank, subject to your bank’s terms and conditions. Minimum order spend applies as per
+                your
+                card-issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate
+                Employee
+                Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your
+                card-issuing
+                bank. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply
+            </p>
+            <p class="footer-para">
+                Representative example: Based off a 6-month tenure. ₹79900.00 total cost includes 15% p.a. and No Cost
+                EMI
+                savings of ₹3380.00, paid over 6 months as six monthly payments of ₹13317.00
+            </p>
+            <p class="footer-para">
+                A subscription is required for Apple TV+.
+                <hr>
+            </p>
+        </div>
+
+        <div class="menu-items">
+            <div class="store">
+            </div>
+            <div class="menu-list">
+                <ul class="product-list">
+                    <li>
+                        <h1>Shop and Learn</h1>
+                    </li>
+                    <li> Store</li>
+                    <li>Mac</li>
+                    <li>iPad </li>
+                    <li>iPhone </li>
+                    <li>Watch </li>
+                    <li>AirPods </li>
+                    <li> TV & Home </li>
+                    <li>AirTag </li>
+                    <li>Accessories</li>
+                    <li>Gift Cards</li>
+                </ul>
+                <ul class="product-list">
+                    <li>
+                        <h1>Account</h1>
+                    </li>
+                    <li>Manage Your Apple ID</li>
+                    <li> Apple Store Account</li>
+                    <li> iCloud.com</li>
+
+                    <li>
+                        <h1>Entertainment</h1>
+                    </li>
+                    <li> Apple orange</li>
+                    <li> Apple TV+</li>
+                    <li> Apple Music</li>
+                    <li> Apple Arcade</li>
+                    <li> Apple Podcasts</li>
+                    <li>Apple Books</li>
+                    <li>App Store</li>
+                </ul>
+
+
+                <ul class="product-list">
+                    <li>
+                        <h3>Apple Store</h3>
+                    </li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Apple Camp</a></li>
+                    <li><a href="#">Field Trip</a></li>
+                    <li><a href="#">Apple Store App</a></li>
+                    <li><a href="#">Refurbished and Clearance</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Reuse and Recycling</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shopping Help</a></li>
+                </ul>
+                <ul class="product-list">
+                    <li>
+                        <h1>For Business</h1>
+                    </li>
+                    <li>Apple and Business</li>
+                    <li>Shop for Business</li>
+
+                    <li>
+                        <h1>For Education</h1>
+                    </li>
+                    <li>Apple and Education</li>
+                    <li>shop for Education</li>
+                    <li>Shop for University</li>
+
+                    <li>
+                        <h1>For Healthcare</h1>
+                    </li>
+                    <li>Apple in Healthcare</li>
+                    <li>Health on Apple Watch</li>
+                </ul>
+
+                <ul class="product-list">
+                    <li>
+                        <h1>Apple Values</h1>
+                    </li>
+                    <li> Accessibility</li>
+                    <li> Environment</li>
+                    <li> Privacy</li>
+                    <li> Supplier Responsibility</li>
+                    <li>
+                        <h1> About Apple </h1>
+                    </li>
+                    <li> Newsroom </li>
+                    <li> Apple Leadership </li>
+                    <li> Career Opportunities </li>
+                    <li> Ethics & Compliance </li>
+                    <li> Events </li>
+                    <li> Contact Apple </li>
+                </ul>
+            </div>
+
+            <section class="footer-base">
+                <div class="footer-more-ways" x-ms-format-detection="none">
+                    More ways to shop: Visit an <a href="/retail/">Apple Store</a>, <span class="nowrap">call
+                        1-800-MY-APPLE, or <a href="#">find a reseller</a></span>.
+                </div>
+                <div class="footer-legal">
+                    <div class="footer-legal-copyright">Copyright © 2018 Apple Inc. All rights reserved.</div>
+                    <div class="footer-legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Sales and Refunds</a>
+                        <a href="#">Legal</a>
+                        <a href="#">Site Map</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+    <script src="geolocation.js"></script>
+    <script>
+        window.onload =
+         function() {
+            onloadPage();
+            geolocation();
+         }
+    </script>
+</body>
+
+</html>

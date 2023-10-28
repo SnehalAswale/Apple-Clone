@@ -1,0 +1,108 @@
+@media (max-width: 1022px) {
+
+    /* Navbar Styles */
+ 
+     nav {
+         height: 6.5vh;
+     }
+ 
+     .navicon {
+         display: block;
+     }
+ 
+     .respnavbar {
+         display: block;
+     }
+ 
+     .responsivediv {
+         display: flex;
+         position: absolute;
+         top: 25%;
+         right: 3%;
+     }
+ 
+     .navlinks {
+         display: block;
+     }
+ 
+     .navlink {
+         display: none;
+     }
+ 
+     /* The info box below the Navbar */
+ 
+     .infobartext {
+         flex-direction: column;
+     }
+ 
+     /* Main page - 1 -> iPhone 14 Pro */
+ 
+     .mainpage1 {
+         background-image: url("/resp1.jpg");
+         height: 515px;
+     }
+ 
+     .mp1-title1 {
+         font-size: 32px;
+     }
+ 
+     .mp1-title2 {
+         font-size: 20px;
+         margin-bottom: 15px;
+     }
+     
+     .mainpagelink {
+         font-size: 16px;
+         text-align: center;
+     }
+ 
+     /* Main page - 2 -> iPhone 14 */
+ 
+     .mainpage2 {
+         background-image: url("/resp3.jpg");
+         height: 550px;
+         z-index: 3;
+     }
+ 
+     /* Main page - 3 -> Apple watch */
+ 
+     .mainpage3 {
+         background-image: url("/hero_apple_watch_series_9_order__d0fi9mb84dci_small_2x.jpg");
+         height: 545px;
+         background-color: black;
+         color: white;
+     }
+ 
+     /* Main page - 4 -> grid items */
+ 
+     .grid-item {
+         flex-basis: 100%;
+         margin: 0px;
+     }
+ 
+     .promo1 {
+         background-image: url("/promo_apple_watch_ultra2_order__dyxqj5ia98om_small_2x.jpg");
+         height: 490px;
+     }
+ 
+     .promo2 {
+         background-image: url("/resp4.jpg");
+     }
+ 
+     .promo3 {
+ 
+         height: 590px;
+     }
+ 
+     .promo4 {
+         background-image: url("/promo_apple_watch_se_order__j70okzn28uye_small_2x.jpg");
+         height: 500px;
+     }
+     .promo5 {
+        background-image: url("/resp4.jpg");
+     }
+ 
+     .promo6 {
+         background-image: url("/promo_apple_watch_ultra2_order__dyxqj5ia98om_small_2x.jpg");
+     }
+ }
