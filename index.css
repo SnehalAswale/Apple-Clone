@@ -81,41 +81,6 @@ nav {
     margin-inline: 25px;
     margin-top: -2.9px;
 }
-/*
-input[type="checkbox"]{
-    -webkit-appearance: none;
-    position: relative;
-    width: 80px;
-    height: 40px;
-    border-radius: 50px;
-    outline: none;
-    background-image: url("https://i.etsystatic.com/38861251/r/il/97df1a/4453208512/il_570xN.4453208512_6syd.jpg");
-    background-size: cover;
-    right: 100px;
-    bottom: 5px;
-    border: 1px solid #000000;
-}
-input[type="checkbox"]::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(235, 229, 229);
-    border-radius: 50px;
-    
-}
-
-input[type="checkbox"]:checked:before{
-    transform: translate(100%);
-}
-
-input[type="checkbox"]:checked{
-    background-image: url("https://i.etsystatic.com/38861251/r/il/97df1a/4453208512/il_570xN.4453208512_6syd.jpg");
-    background-size: cover;
-}
-*/
 #mode {
     visibility: hidden;
 }
@@ -194,7 +159,7 @@ input[type="checkbox"]:checked{
 /* Main page - 1 -> iPhone 14 Pro */
 
 .mainpage1 {
-    background-image: url("/navbar.jpg");
+    background-image: url("navbar.jpg");
     height: 588px;
     background-position: center -35px;
     background-position-x: center;
@@ -224,7 +189,7 @@ input[type="checkbox"]:checked{
 /* Main page - 2 -> iPhone 14 */
 
 .mainpage2 {
-    background-image: url("/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg");
+    background-image: url("hero_iphone15_announce__uuemlcwczn6u_largetall.jpg");
     background-position-x: center;
     height: 82vh;
     width: 100vw;
@@ -257,7 +222,7 @@ input[type="checkbox"]:checked{
 /* Main page - 3 -> Apple watch */
 
 .mainpage3 {
-    background-image: url("/image3.jpg");
+    background-image: url("image3.jpg");
     height: 78vh;
     background-position-x: center;
     width: 100%;
@@ -292,7 +257,7 @@ input[type="checkbox"]:checked{
 
 
 .promo1 {
-    background-image: url("/4-1.jpg");
+    background-image: url("4-1.jpg");
     background-position-x: center;
     height: 560px;
     border: 1px solid black;
@@ -300,7 +265,7 @@ input[type="checkbox"]:checked{
 }
 
 .promo2 {
-    background-image: url("/4-2.jpg");
+    background-image: url("4-2.jpg");
     background-position-x: center;
     height: 560px;
     border: 1px solid black;
@@ -315,14 +280,14 @@ input[type="checkbox"]:checked{
 }
 
 .promo4 {
-    background-image: url("/promo_bts2023_startframe__exvt2t1iuxme_medium.jpg");
+    background-image: url("promo_bts2023_startframe__exvt2t1iuxme_medium.jpg");
     background-position-x: center;
     border: 1px solid black;
     height: 560px;
 }
 
 .promo5 {
-    background-image: url("/promo_macbook_air_15_midnight__3zojl1nanrme_large.jpg");
+    background-image: url("promo_macbook_air_15_midnight__3zojl1nanrme_large.jpg");
     background-position-x: center;
     height: 560px;
     background-size: cover;
